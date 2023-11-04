@@ -20,3 +20,10 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 confusion = confusion_matrix(y_test, y_pred)
 classification_report = classification_report(y_test, y_pred)
+
+# Print results
+print(f'Accuracy: {accuracy:.2f}')
+print('Confusion Matrix:')
+print(confusion)
+print('Classification Report:')
+print(classification_report)
